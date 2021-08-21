@@ -1,3 +1,5 @@
+import { BASE_URL } from './constants';
+
 class Api {
   
   constructor(options) {
@@ -117,9 +119,8 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'http://naumch1k.students.nomoredomains.rocks/api',
+  baseUrl: BASE_URL,
   headers: {
-    //authorization: '2a6d7634-25aa-4e7e-bcf3-8309525480f9',
     'Content-Type': 'application/json'
   }
 })
