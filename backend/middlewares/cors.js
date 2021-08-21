@@ -1,7 +1,7 @@
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 const allowedCors = [
-  'https://naumch1k.nomoredomains.rocks',
-  'https://api.naumch1k.nomoredomains.rocks',
+  'https://naumch1k.students.nomoredomains.rocks',
+  'https://api.naumch1k.students.nomoredomains.rocks',
   'http://localhost:3000',
 ];
 
