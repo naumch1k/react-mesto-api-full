@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://auth.nomoreparties.co';
+export const BASE_URL = 'http://naumch1k.students.nomoredomains.rocks/api';
 export const ESCAPE_KEY = "Escape";
 
 export const formValidationSettings = {
