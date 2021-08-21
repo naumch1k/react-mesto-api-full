@@ -1,7 +1,6 @@
 {
-  "name": "react-mesto-auth",
+  "name": "react-mesto-api-full",
   "version": "0.1.0",
-  "homepage": "https://naumch1k.github.io/react-mesto-auth/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
@@ -19,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && scp -r ./build/* naumch1k@178.154.230.162:/home/naumch1k/react-mesto-api-full/frontend"
   },
   "eslintConfig": {
     "extends": [

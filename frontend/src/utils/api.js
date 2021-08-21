@@ -117,9 +117,9 @@ class Api {
 }
 
 const api = new Api({
-  baseUrl: 'https://mesto.nomoreparties.co/v1/cohort-24',
+  baseUrl: 'http://naumch1k.students.nomoredomains.rocks/api',
   headers: {
-    authorization: '2a6d7634-25aa-4e7e-bcf3-8309525480f9',
+    //authorization: '2a6d7634-25aa-4e7e-bcf3-8309525480f9',
     'Content-Type': 'application/json'
   }
 })
