@@ -1,0 +1,20 @@
+.form__item {
+  font-family: inherit;
+  width: 358px;
+  margin: 1px 0 0;
+  padding: 10px 0 9px;
+  box-sizing: border-box;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  font-size: 14px;
+  line-height: 1.21;
+  outline: none;
+}
+
+.form__item:first-of-type {
+  margin: 0;
+}
+
+.form__item::placeholder {
+  color: #c4c4c4;
+}

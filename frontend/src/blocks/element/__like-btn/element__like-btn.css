@@ -1,0 +1,18 @@
+.element__like-btn {
+  width: 22px;
+  height: 19px;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: url(../../../images/like.svg) no-repeat;
+  cursor: pointer;
+  transition: opacity .5s ease;
+}
+
+.element__like-btn:hover:not(:active) {
+  opacity: .5;
+}
+
+.element__like-btn:active {
+  background: url(../../../images/like-active.svg) no-repeat;
+}

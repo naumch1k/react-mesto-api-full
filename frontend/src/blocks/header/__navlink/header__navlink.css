@@ -1,0 +1,12 @@
+.header__navlink {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  text-decoration: none;
+  
+  transition: opacity .5s ease;
+}
+
+.header__navlink:hover{
+  opacity: 0.6;
+}
