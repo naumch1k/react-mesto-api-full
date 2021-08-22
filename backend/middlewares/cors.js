@@ -3,6 +3,7 @@ const allowedCors = [
   'https://naumch1k.students.nomoredomains.rocks',
   'https://api.naumch1k.students.nomoredomains.rocks',
   'http://localhost:3000',
+  'http://localhost:3001',
 ];
 
 module.exports = (req, res, next) => {
