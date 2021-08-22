@@ -23,6 +23,7 @@ export const register = ({password, email}) => {
 
 export const authorize = ({password, email}) => {
   return fetch(`${BASE_URL}/signin`, {
+    mode: "no-cors",
     method: 'POST',
     headers: {
       "Content-Type": "application/json" 
