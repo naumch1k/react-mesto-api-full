@@ -45,9 +45,6 @@ function App() {
   
   const history = useHistory();
 
-  useEffect(() => {
-    tokenCheck();
-  }, [])
 
   useEffect(() => {
     setIsLoading(true);
@@ -66,25 +63,25 @@ function App() {
   
    }, [])
   
-  const tokenCheck = () => {
-    if (localStorage.getItem('jwt')){
-      const token = localStorage.getItem('jwt');
-      
-      if (token) {
-        auth.checkToken(token)
-          .then((res) => {
-            if (res) {
-              setLoggedIn(true);
-              setUserEmail(res.data.email);
-              history.push('/');
-            }
-          })
-          .catch((err) => {
-            console.log(`Error: ${err}`);
-          })
-      }
-    }
-  }
+   const handleTokenCheck = React.useCallback(() => {
+    console.log('Checking token, calling auth.checkToken');
+
+    auth
+      .checkToken()
+      .then((res) => {
+        setLoggedIn(true);
+        setUserEmail(res.email);
+        history.push('/');
+      })
+      .catch((err) => {
+        console.log(`handleTokenCheck Error: ${err}`);
+      })
+    }, [history])
+
+
+  useEffect(() => {
+    handleTokenCheck();
+}, [handleTokenCheck])
   
   const handleRegistration = (data) => {
     auth.register(data)
@@ -101,12 +98,12 @@ function App() {
   }
   
   const handleLogin = (data) => {
-    auth.authorize(data)
-      .then((res) => {
-        setLoggedIn(true);
-        setUserEmail(data.email);
-        localStorage.setItem('jwt', res.token);
-        history.push('/');
+    console.log('Loging in with:', data);
+    
+    auth
+      .authorize(data)
+      .then(() => {
+        handleTokenCheck(data);
       })
       .catch((err) => {
         setIsSuccess(false);
@@ -117,7 +114,6 @@ function App() {
   
   const handleSignOut = () => {
     setLoggedIn(false);
-    localStorage.removeItem('jwt');
     history.push("/sign-in");
   }
   

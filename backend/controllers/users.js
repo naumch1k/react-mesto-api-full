@@ -23,7 +23,7 @@ module.exports.getCurrentUser = (req, res, next) => {
       if (!user) {
         throw new NotFoundError(StatusMessages.NOT_FOUND);
       }
-      res.send(user);
+      res.status(StatusCodes.OK).send(user);
     })
     .catch((err) => {
       if (err.name === ErrorNames.CAST) {
