@@ -1,8 +1,10 @@
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 const allowedCors = [
   'http://naumch1k.students.nomoredomains.rocks',
+  'https://naumch1k.students.nomoredomains.rocks',
   'http://api.naumch1k.students.nomoredomains.rocks',
-  'http://localhost:3000',
+  'https://api.naumch1k.students.nomoredomains.rocks',
+  'localhost:3000',
 ];
 
 module.exports = (req, res, next) => {
