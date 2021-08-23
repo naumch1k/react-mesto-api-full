@@ -5,3 +5,9 @@
   margin: 0 auto;
   padding: 0 0 32px;
 }
+
+@media screen and (max-width: 414px) {
+  .popup__icon {
+    padding: 0 0 40px;
+  }
+}

@@ -6,21 +6,15 @@
   background-color: #fff;
 }
 
-@media screen and (max-width: 618px) {
-  .popup__container_type_form {
+@media screen and (max-width: 618px){
+  .popup__container_type_message {
     width: 376px;
   }
 }
 
 @media screen and (max-width: 414px) {
-  .popup__container_type_form {
+  .popup__container_type_message {
     width: calc(100% - 38px);
-    padding: 25px 22px;
-  }
-}
-
-@media screen and (max-height: 320px) {
-  .popup__container_type_form {
-    padding: 20px 36px;
+    padding: 50px 22px;
   }
 }
