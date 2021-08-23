@@ -43,6 +43,12 @@ app.use(express.urlencoded({
 
 app.use(requestLogger);
 
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+}); 
+
 app.post('/signin', validateSignin, login);
 app.post('/signup', validateSignup, createUser);
 app.delete('/signout', signOut);
