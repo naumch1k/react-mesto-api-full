@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 const { errors } = require('celebrate');
 
 const { validateSignup, validateSignin } = require('./middlewares/validators');
-const { login, createUser } = require('./controllers/users');
+const { login, createUser, signOut } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const errorHandler = require('./middlewares/errorHandler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
@@ -45,6 +45,7 @@ app.use(requestLogger);
 
 app.post('/signin', validateSignin, login);
 app.post('/signup', validateSignup, createUser);
+app.delete('/signout', signOut);
 
 app.use(auth);
 app.use('/users', require('./routes/users'));

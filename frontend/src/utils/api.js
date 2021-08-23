@@ -1,4 +1,6 @@
 import { BASE_URL } from './constants';
+//const BASE_URL = 'http://localhost:3000';
+
 
 class Api {
   
@@ -25,11 +27,10 @@ class Api {
   }
 
   addNewCard(data) {
-    return fetch(`${this._baseUrl}/cards`, {
+      return fetch(`${this._baseUrl}/cards`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: this._headers,
+      credentials: "include",
       body: JSON.stringify({
         name: data.name,
         link: data.link
@@ -41,9 +42,8 @@ class Api {
   deleteCard(cardId) {
     return fetch(`${this._baseUrl}/cards/${cardId}`, {
       method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json'
-      }
+      headers: this._headers,
+      credentials: "include",
     })
     .then(this._handleResponse)
   }
@@ -73,9 +73,8 @@ class Api {
   setUserAvatar(data) {
     return fetch(`${this._baseUrl}/users/me/avatar`, {
       method: 'PATCH',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: this._headers,
+      credentials: 'include',
       body: JSON.stringify({
         avatar: data.avatar
       })
@@ -92,21 +91,19 @@ class Api {
   }
 
   _deleteLike(cardId) {
-    return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
+    return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
       method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json'
-      }
+      headers: this._headers,
+      credentials: 'include',
     })
     .then(this._handleResponse)
   }
 
   _setLike(cardId) {
-    return fetch(`${this._baseUrl}/cards/likes/${cardId}`, {
+    return fetch(`${this._baseUrl}/cards/${cardId}/likes`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      }
+      headers: this._headers,
+      credentials: 'include',
     })
     .then(this._handleResponse)
   }

@@ -1,4 +1,5 @@
 import { BASE_URL } from './constants';
+//const BASE_URL = 'http://localhost:3000';
 
 const handleResponse = (res) => {
   if (res.ok) {
@@ -33,10 +34,7 @@ export const authorize = ({ password, email }) => {
       email
     })
   })
-  .then((res) => {
-    console.log('auth.authorize response:', res);
-    handleResponse(res);
-  });
+  .then((res) => handleResponse(res));
 }
 
 export const checkToken = () => {
@@ -47,8 +45,12 @@ export const checkToken = () => {
     },
     credentials: 'include',
   })
-  .then((res) => {
-    console.log('auth.checkToken response:', res);
-    handleResponse(res);
-  });
+  .then((res) => handleResponse(res));
+};
+
+export const signOut = () => {
+  return fetch(`${BASE_URL}/signout`, {
+      method: "DELETE",
+      credentials: "include",
+  }).then((res) => handleResponse(res));
 };

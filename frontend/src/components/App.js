@@ -47,12 +47,13 @@ function App() {
 
 
   useEffect(() => {
+    if (loggedIn) {
     setIsLoading(true);
-  
-     Promise.all([api.getUserInfo(), api.getCards()])
+
+    Promise.all([api.getUserInfo(), api.getCards()])
       .then(([userData, cardsData]) => {
         setCurrentUser(userData);
-        setCards(cardsData);
+        setCards(cardsData.data);
       })
       .catch((err) => {
         console.log(`Couldnt get data from the server. ${err}`);
@@ -60,21 +61,19 @@ function App() {
       .finally(() => {
         setIsLoading(false);
       }); 
+    }
   
-   }, [])
+   }, [loggedIn])
   
    const handleTokenCheck = React.useCallback(() => {
-    console.log('Checking token, calling auth.checkToken');
-
-    auth
-      .checkToken()
+    auth.checkToken()
       .then((res) => {
         setLoggedIn(true);
         setUserEmail(res.email);
         history.push('/');
       })
       .catch((err) => {
-        console.log(`handleTokenCheck Error: ${err}`);
+        console.log(`Error: ${err}`);
       })
     }, [history])
 
@@ -98,12 +97,9 @@ function App() {
   }
   
   const handleLogin = (data) => {
-    console.log('Loging in with:', data);
-    
-    auth
-      .authorize(data)
+    auth.authorize(data)
       .then(() => {
-        handleTokenCheck(data);
+        handleTokenCheck();
       })
       .catch((err) => {
         setIsSuccess(false);
@@ -113,8 +109,16 @@ function App() {
   }
   
   const handleSignOut = () => {
-    setLoggedIn(false);
-    history.push("/sign-in");
+    auth
+      .signOut()
+      .then(() => {
+        setLoggedIn(false);
+        setUserEmail("");
+        history.push("/sign-in");
+      })
+      .catch((err) => {
+        console.log(`Unable to logout. ${err}`);
+      })
   }
   
   const handleUpdateUser = (data) => {
@@ -172,11 +176,11 @@ function App() {
   }
   
   const handleCardLike = (card) => {
-    const isLiked = card.likes.some(item => item._id === currentUser._id);
+    const isLiked = card.likes.some(item => item === currentUser._id);
   
     api.changeLikeCardStatus(card._id, isLiked)
       .then((newCard) => {
-        setCards((state) => state.map((currentCard) => currentCard._id === card._id ? newCard : currentCard));
+        setCards((cards) => cards.map((currentCard) => currentCard._id === card._id ? newCard : currentCard));
       })
       .catch((err) => {
         console.log(`${err}`);

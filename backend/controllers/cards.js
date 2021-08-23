@@ -6,7 +6,7 @@ const StatusMessages = require('../utils/status-messages');
 const { NotFoundError, ForbiddenError, BadRequestError } = require('../errors/index');
 
 module.exports.getCards = (req, res, next) => {
-  Card.find({})
+  Card.find({}).sort({ createdAt: -1 })
     .then((cards) => res.send({ data: cards }))
     .catch(next);
 };

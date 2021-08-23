@@ -149,3 +149,8 @@ module.exports.updateAvatar = (req, res, next) => {
     })
     .catch(next);
 };
+
+module.exports.signOut = (req, res, next) => {
+  res.clearCookie('jwt').send({ message: 'Кука удалена' });
+  next();
+};
