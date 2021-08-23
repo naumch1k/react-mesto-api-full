@@ -14,6 +14,11 @@ const errorHandler = require('./middlewares/errorHandler');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { NotFoundError } = require('./errors/index');
 
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+});
+
 mongoose.connect('mongodb://localhost:27017/mestodb', {
   useNewUrlParser: true,
   useCreateIndex: true,
@@ -26,22 +31,14 @@ const { PORT = 3000 } = process.env;
 const app = express();
 
 app.use(cors);
-
-app.use(
-  rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100, // limit each IP to 100 requests per windowMs
-  }),
-  helmet(),
-);
-
+app.use(requestLogger);
+app.use(limiter);
+app.use(helmet());
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({
   extended: true,
 }));
-
-app.use(requestLogger);
 
 app.get('/crash-test', () => {
   setTimeout(() => {
