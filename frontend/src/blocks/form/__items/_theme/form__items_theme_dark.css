@@ -1,3 +1,16 @@
 .form__items_theme_dark {
+  width: 358px;
   margin: 0 0 196px;
+}
+
+@media screen and (max-width: 1023px) {
+  .form__items_theme_dark {
+    margin: 0 0 45px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .form__items_theme_dark {
+    width: calc(100% - 60px);
+  }
 }

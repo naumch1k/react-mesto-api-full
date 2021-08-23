@@ -16,8 +16,15 @@
   opacity: .8;
 }
 
+@media screen and (max-width: 619px) {
+  .form__submit-btn:not(.form__submit-btn_theme_dark) {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 414px) {
-  .form__submit-btn {
+  .form__submit-btn_theme_dark {
+    width: calc(100% - 60px);
     height: 46px;
     font-size: 14px;
     line-height: 1.21;
