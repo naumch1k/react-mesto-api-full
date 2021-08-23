@@ -1,11 +1,11 @@
 require('dotenv').config();
 const express = require('express');
 const rateLimit = require('express-rate-limit');
-const cors = require('./middlewares/cors');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const { errors } = require('celebrate');
+const cors = require('./middlewares/cors');
 
 const { validateSignup, validateSignin } = require('./middlewares/validators');
 const { login, createUser, signOut } = require('./controllers/users');
@@ -44,7 +44,7 @@ app.get('/crash-test', () => {
   setTimeout(() => {
     throw new Error('Сервер сейчас упадёт');
   }, 0);
-}); 
+});
 
 app.post('/signin', validateSignin, login);
 app.post('/signup', validateSignup, createUser);
