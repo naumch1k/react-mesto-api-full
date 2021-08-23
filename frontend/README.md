@@ -26,6 +26,6 @@
 * JSX
 
 ## TO DO
-* Mobile layout for Login and Register components; hamburger menu for the main page
+* Mobile layout for Header and Tooltip components; hamburger menu for the main page
 * Close popups with esc/overlay click
 * Live form validation
