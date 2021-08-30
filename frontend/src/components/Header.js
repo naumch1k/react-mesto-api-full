@@ -27,12 +27,12 @@ function Header({ loggedIn, userEmail, onSignOut }) {
         </nav>)
       }
       {loggedIn &&
-        (<>
+        (<div className="header__user-info">
           <p className="header__email">{userEmail}</p>
           <button onClick={onSignOut} className="header__button" type="button">
             Выйти
           </button>
-        </>)
+        </div>)
       }
     </header>
   )

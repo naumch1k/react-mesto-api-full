@@ -23,7 +23,7 @@ function Login({ onLogin }) {
 
   return(
     <form onSubmit={handleSubmit} className="form form_theme_dark" name="login-form">
-      <h2 className="form__heading">Вход</h2>
+      <h2 className="form__heading form__heading_theme_dark">Вход</h2>
       <fieldset className="form__items form__items_theme_dark">
         <input 
           className="form__item form__item_theme_dark form__item_el_email"

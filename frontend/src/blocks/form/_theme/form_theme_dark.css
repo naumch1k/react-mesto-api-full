@@ -5,3 +5,9 @@
 
   padding: 60px 0;
 }
+
+@media screen and (max-width: 414px) {
+  .form_theme_dark {
+    padding: 40px 0;
+  }
+}
