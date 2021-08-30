@@ -10,12 +10,12 @@ function InfoTooltip(props) {
         <img
           className="popup__icon"
           src={props.isSuccess ? successIcon : failIcon}
-          alt={props.isSuccess ? 'Иконка успешной регистрации' : 'Иконка ошибки регистрации'}
+          alt={props.isSuccess ? 'Success icon' : 'Error icon'}
         />
         <p className="popup__message">
-          {props.isSuccess ? 'Вы успешно зарегистрировались!' : 'Что-то пошло не так! Попробуйте ещё раз.'}
+          {props.isSuccess ? 'Your account has been created successfully!' : 'Sorry, something went wrong. Please try again.'}
         </p>
-        <button onClick={props.onClose} className="popup__close-btn" type="button" aria-label="Закрыть окно"></button>
+        <button onClick={props.onClose} className="popup__close-btn" type="button" aria-label="Close popup"></button>
       </div>
     </div>
   )

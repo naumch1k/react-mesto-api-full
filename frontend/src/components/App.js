@@ -34,9 +34,9 @@ function App() {
   const [isInfoTooltipPopupOpen, setIsInfoTooltipPopupOpen] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   
-  const [profileSubmitButtonText, setProfileSubmitButtonText] = useState('Сохранить');
-  const [avatarSubmitButtonText, setAvatarSubmitButtonText] = useState('Сохранить');
-  const [cardSubmitButtonText, setCardSubmitButtonText] = useState('Создать');
+  const [profileSubmitButtonText, setProfileSubmitButtonText] = useState('Edit');
+  const [avatarSubmitButtonText, setAvatarSubmitButtonText] = useState('Update');
+  const [cardSubmitButtonText, setCardSubmitButtonText] = useState('Post');
   
   const [cards, setCards] = useState([]);
   const [selectedCard, setSelectedCard] = useState(null);
@@ -122,7 +122,7 @@ function App() {
   }
   
   const handleUpdateUser = (data) => {
-    setProfileSubmitButtonText('Сохранение...');
+    setProfileSubmitButtonText('Saving...');
   
      api.setUserInfo(data)
       .then((res) => {
@@ -135,12 +135,12 @@ function App() {
         console.log(`Unable to update user info. ${err}`);
       })
       .finally(() => {
-        setProfileSubmitButtonText('Сохранить');
+        setProfileSubmitButtonText('Edit');
       })
   }
   
   const handleAddPlace = (data) => {
-    setCardSubmitButtonText('Сохранение...');
+    setCardSubmitButtonText('Uploading...');
   
      api.addNewCard(data)
       .then((newCard) => {
@@ -153,12 +153,12 @@ function App() {
         console.log(`Unable to publish a card. ${err}`);
       })
       .finally(() => {
-        setCardSubmitButtonText('Создать');
+        setCardSubmitButtonText('Post');
       })
   }
   
   const handleUpdateAvatar = (data) => {
-    setAvatarSubmitButtonText('Сохранение...');
+    setAvatarSubmitButtonText('Uploading...');
   
      api.setUserAvatar(data)
       .then((res) => {
@@ -171,7 +171,7 @@ function App() {
         console.log(`Unable to update user avatar. ${err}`);
       })
       .finally(() => {
-        setAvatarSubmitButtonText('Сохранить');
+        setAvatarSubmitButtonText('Update');
       })
   }
   
@@ -280,8 +280,8 @@ function App() {
           /> 
           <PopupWithForm
             name="confirm"
-            title="Вы уверены?"
-            buttonText="Да"
+            title="Please confirn"
+            buttonText="Yes, delete"
           />
           { selectedCard && 
           <ImagePopup 

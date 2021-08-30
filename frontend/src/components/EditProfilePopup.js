@@ -33,7 +33,7 @@ function EditProfilePopup(props) {
   return (
     <PopupWithForm
       name="edit"
-      title="Редактировать профиль"
+      title="Edit Profile"
       buttonText={props.buttonText}
       isOpen={props.isOpen}
       onSubmit={handleSubmit}
@@ -44,7 +44,7 @@ function EditProfilePopup(props) {
         id="profile-name" 
         type="text" 
         name="name" 
-        placeholder="Имя" 
+        placeholder="Name" 
         minLength="2" maxLength="40"
         value={name}
         onChange={handleNameChange}
@@ -56,7 +56,7 @@ function EditProfilePopup(props) {
         id="profile-bio" 
         type="text" 
         name="about" 
-        placeholder="О себе" 
+        placeholder="About" 
         minLength="2" maxLength="200" 
         value={description}
         onChange={hanldeDescriptionChange}

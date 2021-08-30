@@ -13,14 +13,14 @@ function Header({ loggedIn, userEmail, onSignOut }) {
           {location.pathname === '/sign-in' &&
             (
               <Link className="header__navlink" to="/sign-up">
-                Регистрация
+                Sign up
               </Link>
             )
           }
           {location.pathname === '/sign-up' &&
             (
               <Link className="header__navlink" to="/sign-in">
-                Войти
+                Sign in
               </Link>
             )
           }
@@ -30,7 +30,7 @@ function Header({ loggedIn, userEmail, onSignOut }) {
         (<div className="header__user-info">
           <p className="header__email">{userEmail}</p>
           <button onClick={onSignOut} className="header__button" type="button">
-            Выйти
+            Sign out
           </button>
         </div>)
       }
