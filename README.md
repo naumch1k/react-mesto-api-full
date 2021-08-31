@@ -8,7 +8,7 @@ online photo-sharing application, combines [frontend (React JS)](https://github.
 
 You are more than welcome to register yourself, or can just use   
 login: *test@test.ru*  
-password: *password*
+password: *testtest*
 
 ### Functionality
 * User authorization and registration
