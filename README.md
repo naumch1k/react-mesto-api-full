@@ -6,6 +6,10 @@ online photo-sharing application, combines [frontend (React JS)](https://github.
 * Server URL: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
 * Public IP Address: *178.154.230.162*
 
+You are more than welcome to register yourself, or can just use   
+login: *test@test.ru*  
+password: *password*
+
 ### Functionality
 * User authorization and registration
 * Change user avatar
