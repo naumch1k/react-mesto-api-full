@@ -6,7 +6,6 @@ online photo-sharing application, combines [frontend (React JS)](https://github.
 * Server URL: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
 * Public IP Address: *178.154.230.162*
 
-
 ### Functionality
 * User authorization and registration
 * Change user avatar
@@ -18,5 +17,5 @@ online photo-sharing application, combines [frontend (React JS)](https://github.
 
 ### TO DO
 * Finish mobile layouts
-* Add close popups with esc/overlay click functionallity
+* Add close popups with overlay click functionallity
 * Live form validation

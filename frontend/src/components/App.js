@@ -221,6 +221,19 @@ function App() {
     setIsInfoTooltipPopupOpen(false);
   }
 
+  const closeByEsc = React.useCallback(e => {
+    if (e.key === 'Escape') {
+      closeAllPopups();
+    }
+  }, []);
+
+  useEffect(() => {
+    if (isAddPlacePopupOpen || isEditAvatarPopupOpen || isEditProfilePopupOpen || selectedCard) {
+      document.addEventListener('keydown', closeByEsc)
+    }
+    return () => document.removeEventListener('keydown', closeByEsc)
+  }, [closeByEsc, isAddPlacePopupOpen, isEditProfilePopupOpen, isEditAvatarPopupOpen, selectedCard]);
+
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <div className="page">
