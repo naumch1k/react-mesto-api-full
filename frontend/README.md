@@ -1,8 +1,16 @@
 # Portfolio project: "Mesto" (React JS App) with User Login and Authentication
 
-*Read this in other languages:* [RU](https://github.com/naumch1k/react-mesto-auth/blob/main/README.RU.md) 
+frontend for the portfolio project @ Yandex.Practicum
 
-[GitHub Pages Link](https://naumch1k.github.io/react-mesto-auth/)
+*Read this in other languages:* [RU](https://github.com/naumch1k/react-mesto-api-full/blob/main/frontend/README.RU.md) 
+
+* Frontend Hosting: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
+* Server URL: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
+* Public IP Address: *178.154.230.162*
+
+You are more than welcome to register yourself, or can just use   
+login: *test@test.ru*  
+password: *testtest*
 
 ## Description
 "Mesto" is a portfolio project created as a part of a study at [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program") - online photo-sharing application with __user login and authentication__ features added.
@@ -23,9 +31,9 @@ React JS | BEM Methodology, File Structure and File Paths (Nested BEM) | Adaptiv
 
 ```bash
 # Clone the repository
-git clone https://github.com/naumch1k/react-mesto-auth.git
+git clone https://github.com/naumch1k/react-mesto-api-full.git
 # Enter the project directory
-cd react-mesto-auth
+cd react-mesto-api-full && cd frontend
 # Install dependencies
 npm i
 ```
@@ -42,9 +50,6 @@ In the project directory, you can run:
 `npm run deploy`
 
 > Places the production version code into the `gh-pages` branch
-
-<br>
-
 
 ## TO DO
 - [ ] Hamburger menu for the main page

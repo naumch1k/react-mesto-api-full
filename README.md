@@ -1,6 +1,6 @@
 # Portfolio project: "Mesto"
 
-online photo-sharing application, combines [frontend (React JS)](https://github.com/naumch1k/react-mesto-auth) and [backend (Express JS)](https://github.com/naumch1k/express-mesto)
+online photo-sharing application, combines [frontend (React JS)](https://github.com/naumch1k/react-mesto-api-full/tree/main/frontend) and [backend (Express JS)](https://github.com/naumch1k/react-mesto-api-full/tree/main/backend)
 
 * Frontend Hosting: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
 * Server URL: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
@@ -19,7 +19,10 @@ password: *testtest*
 * Likes counter
 * Full-sized image preview
 
+## Tech
+React JS | Express JS | Node.js | MongoDB | BEM | Adaptive design
+
 ### TO DO
-* Finish mobile layouts
-* Add close popups with overlay click functionallity
-* Live form validation
+- [ ] Finish mobile layouts
+- [ ] Add close popups with overlay click functionallity
+- [ ] Live form validation
