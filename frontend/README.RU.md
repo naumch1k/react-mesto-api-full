@@ -6,10 +6,10 @@
 
 * Адрес размещения фронтенда: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
 * Адрес домена сервера: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
-* Публичный IP: *178.154.230.162*
+* Публичный IP: *3.23.105.46*
 
 Если совсем лень регистрироваться  
-логин: *test@test.ru*  
+логин: *test@test.com*  
 пароль: *testtest*
 
 ## Описание проекта

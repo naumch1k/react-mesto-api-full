@@ -6,10 +6,10 @@ frontend for the portfolio project @ Yandex.Practicum
 
 * Frontend Hosting: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
 * Server URL: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
-* Public IP Address: *178.154.230.162*
+* Public IP Address: *3.23.105.46*
 
 You are more than welcome to register yourself, or can just use   
-login: *test@test.ru*  
+login: *test@test.com*  
 password: *testtest*
 
 ## Description
