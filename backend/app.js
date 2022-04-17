@@ -19,12 +19,16 @@ const limiter = rateLimit({
   max: 100, // limit each IP to 100 requests per windowMs
 });
 
-mongoose.connect('mongodb://localhost:27017/mestodb', {
+const uri = process.env.MONGO_URI;
+
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,
   useUnifiedTopology: true,
-});
+})
+  // eslint-disable-next-line no-console
+  .then(() => console.log('Database Connected'));
 
 const { PORT = 3000 } = process.env;
 
