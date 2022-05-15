@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Login({ onLogin }) {
   const [email, setEmail] = useState('');
@@ -48,7 +49,11 @@ function Login({ onLogin }) {
         />
         <p className="form__error" id="password-error"></p>
       </fieldset>
-      <button className="form__submit-btn form__submit-btn_theme_dark" type="submit">Sign in</button>
+      <button className="form__submit-btn form__submit-btn_theme_dark" type="submit">Log in</button>
+      <p className="form__text">
+        Not a member yet?
+        <Link to="/sign-up" className="form__link"> Sign up here!</Link>
+      </p>
     </form>
   );
 }
