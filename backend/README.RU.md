@@ -1,4 +1,4 @@
-# Учебный проект: Mesto (React JS App) с авторизацией и регистрацией пользователей
+# Учебный проект: "Around the U.S." (React JS App) с авторизацией и регистрацией пользователей
 
 *Read this in other languages:* [EN](https://github.com/naumch1k/react-mesto-api-full/blob/main/backend/README.md)
 

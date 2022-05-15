@@ -7,7 +7,7 @@ function Header({ loggedIn, userEmail, onSignOut }) {
 
   return (
     <header className="header page__header">
-      <img className="header__logo" src={logoPath} alt="Логотип сервиса Mesto Russia" />
+      <img className="header__logo" src={logoPath} alt="Around the US app logo" />
       {!loggedIn &&
         (<nav>
           {location.pathname === '/sign-in' &&

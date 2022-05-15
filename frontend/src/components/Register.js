@@ -52,7 +52,7 @@ function Register({ onRegistration }) {
       <button className="form__submit-btn form__submit-btn_theme_dark" type="submit">Sign up</button>
       <p className="form__text">
         Already have an account?
-        <Link to="/sign-in" className="form__link"> Sign in</Link>
+        <Link to="/sign-in" className="form__link"> Log in here!</Link>
       </p>
     </form>
   );

@@ -1,4 +1,4 @@
-# Portfolio project: "Mesto" (React JS App) with User Login and Authentication
+# Portfolio project: "Around the U.S." (React JS App) with User Login and Authentication
 
 *Read this in other languages:* [RU](https://github.com/naumch1k/react-mesto-api-full/blob/main/backend/README.RU.md)
 

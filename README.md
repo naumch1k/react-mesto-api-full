@@ -1,4 +1,4 @@
-# Portfolio project: "Mesto"
+# Portfolio project: "Around the U.S."
 
 online photo-sharing application, combines [frontend (React JS)](https://github.com/naumch1k/react-mesto-api-full/tree/main/frontend) and [backend (Express JS)](https://github.com/naumch1k/react-mesto-api-full/tree/main/backend)
 

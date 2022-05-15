@@ -1,4 +1,4 @@
-# Portfolio project: "Mesto" (React JS App) with User Login and Authentication
+# Portfolio project: "Around the U.S." (React JS App) with User Login and Authentication
 
 frontend for the portfolio project @ Yandex.Practicum
 
@@ -13,7 +13,7 @@ login: *test@test.com*
 password: *testtest*
 
 ## Description
-"Mesto" is a portfolio project created as a part of a study at [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program") - online photo-sharing application with __user login and authentication__ features added.
+"Around th US" is a portfolio project created as a part of a study at [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program") - online photo-sharing application with __user login and authentication__ features added.
 
 ### Functionality
 * User authorization and registration
