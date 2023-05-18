@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.naumch1k.students.nomoredomains.rocks';
+export const BASE_URL = 'https://api.gramnaumchik.xyz';
 export const ESCAPE_KEY = "Escape";
 
 export const formValidationSettings = {
