@@ -2,9 +2,9 @@
 
 *Read this in other languages:* [RU](https://github.com/naumch1k/react-mesto-api-full/blob/main/backend/README.RU.md)
 
-backend for the portfolio project @ [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program")
+backend for the portfolio project @ [Practicum Bootcamp](https://practicum.com/software-engineer/ "Software Engineering Program")
 
-* Frontend Hosting: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
+* Frontend Hosting: [https://gramnaumchik.xyz/](https://gramnaumchik.xyz/)
 * [Frontend repository](https://github.com/naumch1k/react-mesto-api-full/tree/main/frontend)
 
 ## Tech

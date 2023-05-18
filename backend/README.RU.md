@@ -2,9 +2,9 @@
 
 *Read this in other languages:* [EN](https://github.com/naumch1k/react-mesto-api-full/blob/main/backend/README.md)
 
-бэкенд учебного проекта в [Yandex Практикуме](https://praktikum.yandex.ru/web/ "Курс Веб-разработчик")
+бэкенд учебного проекта в [Практикуме](https://praktikum.yandex.ru/web/ "Курс Веб-разработчик")
 
-* Адрес размещения фронтенда: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
+* Адрес размещения фронтенда: [https://gramnaumchik.xyz/](https://gramnaumchik.xyz/)
 * [Репозиторий с фронтендом](https://github.com/naumch1k/react-mesto-api-full/tree/main/frontend)
 
 ## Технологии, которые применялись в проекте

@@ -4,8 +4,8 @@ frontend for the portfolio project @ Yandex.Practicum
 
 *Read this in other languages:* [RU](https://github.com/naumch1k/react-mesto-api-full/blob/main/frontend/README.RU.md) 
 
-* Frontend Hosting: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
-* Server URL: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
+* Frontend Hosting: [https://gramnaumchik.xyz/](https://gramnaumchik.xyz/)
+* Server URL: [https://api.gramnaumchik.xyz/](https://api.gramnaumchik.xyz/)
 * Public IP Address: *3.23.105.46*
 
 You are more than welcome to register yourself, or can just use   
@@ -13,7 +13,7 @@ login: *test@test.com*
 password: *testtest*
 
 ## Description
-"Around th US" is a portfolio project created as a part of a study at [Yandex.Practicum](https://practicum.yandex.com/web/ "Web Development Program") - online photo-sharing application with __user login and authentication__ features added.
+"Around th US" is a portfolio project created as a part of a study at [Practicum Bootcamp](https://practicum.com/software-engineer/ "Software Engineering Program") - online photo-sharing application with __user login and authentication__ features added.
 
 ### Functionality
 * User authorization and registration

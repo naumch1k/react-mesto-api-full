@@ -4,8 +4,8 @@
 
 *Read this in other languages:* [EN](https://github.com/naumch1k/react-mesto-api-full/blob/main/frontend/README.md)
 
-* Адрес размещения фронтенда: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
-* Адрес домена сервера: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
+* Адрес размещения фронтенда: [https://gramnaumchik.xyz/](https://gramnaumchik.xyz/)
+* Адрес домена сервера: [https://api.gramnaumchik.xyz//](https://api.gramnaumchik.xyz/)
 * Публичный IP: *3.23.105.46*
 
 Если совсем лень регистрироваться  
@@ -13,7 +13,7 @@
 пароль: *testtest*
 
 ## Описание проекта
-Учебный проект [Yandex Практикум](https://praktikum.yandex.ru/web/ "Курс Веб-разработчик") - интерактивная страница, где пользователи могут делиться фотографиями.
+Учебный проект [Практикум](https://praktikum.yandex.ru/web/ "Курс Веб-разработчик") - интерактивная страница, где пользователи могут делиться фотографиями.
 
 ### На данном этапе реализовано
 * авторизация и регистрация пользователей
