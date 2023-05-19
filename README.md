@@ -2,8 +2,8 @@
 
 online photo-sharing application, combines [frontend (React JS)](https://github.com/naumch1k/react-mesto-api-full/tree/main/frontend) and [backend (Express JS)](https://github.com/naumch1k/react-mesto-api-full/tree/main/backend)
 
-* Frontend Hosting: [https://naumch1k.students.nomoredomains.rocks/](https://naumch1k.students.nomoredomains.rocks/)
-* Server URL: [https://api.naumch1k.students.nomoredomains.rocks/](https://api.naumch1k.students.nomoredomains.rocks/)
+* Frontend Hosting: [https://gramnaumchik.xyz/](https://gramnaumchik.xyz/)
+* Server URL: [https://api.gramnaumchik.xyz/](https://api.gramnaumchik.xyz/)
 * Public IP Address: *3.23.105.46*
 
 You are more than welcome to register yourself, or can just use   
